@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.field {
+    width: 158px;
+    height: 158px;
+    margin: 10px auto;
+    margin-bottom: 15px;
+    padding: 2px;
+    background: black;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2px;
+}
+
+.cell {
+    background: white;
+    text-align: center;
+    font-family: Arial;
+    font-size: 26px;
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background: #e3e1e1;
+}
+
+.wrapper {
+    width: 102px;
+    margin: 0 auto;
+}
+
+.queue {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+input {
+    padding: 3px;
+}
+
+.wins {
+    width: 150px;
+    border: 1px solid black;
+    padding: 20px;
+
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.wins ul {
+    list-style-type: none;
+}
+
+.wins ul li {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}

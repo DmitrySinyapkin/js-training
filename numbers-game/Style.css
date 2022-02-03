@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 10px;
+}
+
+.status {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+    display: none;
+}
+
+.field {
+    margin: 0px auto 20px auto;
+    width: 282px;
+    height: 282px;
+    border: 1px solid black;
+    padding: 2px;
+
+    display: none;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+}
+
+.cell {
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+}
+
+.inner {
+    margin: auto;
+    font-weight: bold;
+}
+
+.rules, .input {
+    text-align: center;
+}
+
+.start {
+    padding: 0 10px;
+}
